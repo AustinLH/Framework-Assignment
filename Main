@@ -255,32 +255,7 @@ void familyTree::find()
             }
 
             break;
-      case 3:
-            
-            strcpy(s,"Wife");
-            if(ptr1->g)
-                strcpy(s,"Husband");
-
-            ptr = ptr1;
-            while(ptr!=NULL)
-            {
-                if(ptr==ptr2)
-                {
-                    cout<<endl<<name1<<" is "<<name2<<"'s "<<s<<endl;
-                    return;
-                }
-                ptr = ptr->ns;
-            }
-            ptr = ptr2;
-            while(ptr!=NULL)
-            {
-                if(ptr==ptr1)
-                {
-                    cout<<endl<<name1<<" is "<<name2<<"'s "<<s<<endl;
-                    return;
-                }
-                ptr = ptr->ns;
-            }
+      
             cout<<endl<<name1<<" and "<<name2<<" are Cousins";
             break;        
     default:
